@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jamie Mansfield</title>
+
+    <!-- Semantic UI css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
+
+    {% block css %}{% endblock %}
+</head>
+<body>
+
+<nav class="ui menu">
+    <a class="header item" href="/">
+        Jamie Mansfield
+    </a>
+
+    <!-- Left items -->
+    <a class="item" href="/blog">
+        Blog
+    </a>
+    <a class="item" href="/about">
+        About Me
+    </a>
+
+    <!-- Right items -->
+    <a class="right item" href="http://school.jamierocks.uk/">
+        School Stuff
+    </a>
+</nav>
+
+<div class="ui container">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+<!-- Semantic UI js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+
+{% block javascript %}{% endblock %}
+
+</body>
+</html>
